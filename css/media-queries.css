@@ -1,0 +1,89 @@
+@media (max-width: 480px) {
+header{
+  display: block;
+  width: 100%;
+}
+article{
+  display: block;
+  width: 340px;
+  padding-left: 6px;
+  margin-top: 1px;
+}
+aside{
+  display: block;
+  width: 340px;
+  margin-top: 15px;
+  margin-bottom: -1rem;
+  padding-left: 6px;
+}
+main{
+  display: block;
+  width: 350px;
+}
+footer{
+  display: block;
+  width: 350px;
+}
+nav > ul{
+  display: none;
+}
+.vid{
+  width: 333px;
+}
+.butt{
+  display: block;
+}
+nav:hover > ul{
+  display: block;
+}
+.text{
+  display: block;
+}
+body{
+  width: 350px
+}
+table{
+  width: 320px;
+}
+#zv{
+  font-size: 15px;
+}
+nav li{
+    flex-direction: column;
+  position: relative;
+  background-color: #FFE4B5;
+  border: 1px solid black;
+  position: relative;
+}
+.menu{
+  position: absolute;
+  margin-left: 35px;
+}
+nav > ul{
+  padding-left: 20px;
+}
+.pidmenu{
+  z-index: 1;
+}
+.pidmenu li{
+  top: 2px;
+  border: 1px solid black;
+}
+nav a{
+  font-size: 1.6rem;
+}
+aside {
+  display: block;
+}
+footer{
+  margin-top: 10px;
+}
+body {
+  margin: 0 auto;
+}
+aside {
+  flex: 1;
+  margin-left: 2px;
+  padding: 1%;
+}
+}

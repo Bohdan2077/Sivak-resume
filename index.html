@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Резюме Сівак Богдан</title>
+	    <script>
+    	var photos_count = 4;//змінна кількості фото, які треба перегорнути
+    	var current_photo_index = 1;// змінна, яка містить індекс поточного номера фото\
+    	function show_next_photo(){//створюємо функцію для гортання фото
+    		current_photo_index++//додаємо 1 до поточної змінної із номером фото
+    		if (current_photo_index > photos_count) current_photo_index = 1;//умова, що дозвроляє по колу перемикати фото від 1 до 5, а потім знову від 1 до 5 включно
+    		var element_photo = document.getElementById("current_photo")
+    		//помістити у змінну витягнути елемент із id current_photo
+    		element_photo.src =  "images/photo" + current_photo_index + ".jpg";//заміни номер у назві фото на поточний 
+    	}
+    	var photos_count = 4;//змінна кількості фото, які треба перегорнути
+    	var current_photo_index = 1;// змінна, яка містить індекс поточного номера фото\
+    	function show_last_photo(){//створюємо функцію для гортання фото
+    		current_photo_index--//додаємо 1 до поточної змінної із номером фото
+    		if (current_photo_index < 1) current_photo_index = 4;//умова, що дозвроляє по колу перемикати фото від 1 до 5, а потім знову від 1 до 5 включно
+    		var element_photo = document.getElementById("current_photo")
+    		//помістити у змінну витягнути елемент із id current_photo
+    		element_photo.src =  "images/photo" + current_photo_index + ".jpg";//заміни номер у назві фото на поточний 
+    	}
+    	console.log("Цей сайт був написаний на колінці з мінімальним знанням певних мов програмування на першому курсі, прошу суворо не засуджувати. За весь написаний код дяую Юлії Миколаївній, та знанням які вона нам дала. Сподіваюся у майбутньому код стане набагато грамотніший та красивіший, ну і звичайно більший. А поки що дякую за увагу та ваше розуміння. ГАРНОГО ДНЯ !")
+    </script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="css/media-queries.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+	<h1>Богдан Сівак</h1>
+	<nav class="menu-main">
+	<img class="butt" src="images/ic.png">
+	      <ul class="menu">
+	      	<li><a href="#">Швидка навігація</a>
+	      		<ul class="pidmenu">
+	      			<li><a href="#zv">Зворотній зв'язок</a></li>
+	      			<li><a href="#os">Особиста інформіція</a></li>
+	      			<li><a href="#kon">Контакти</a></li>
+	      		</ul>
+	      	</li>
+	        <li><a href="index.html">Про себе</a></li>
+	        <li><a href="page2.html">Біографія</a></li>
+	        <li><a href="page3.html">Потреби</a></li> <!-- ВКЛАДКА КРІНЖ вибачте:( -->
+	      </ul>
+	      </nav>
+	</header>
+	<main>
+<article>
+	<h2>Захоплення та робота</h2>
+	<p>На щастя, моя робота є частиною моїх захоплень. Я навіть через 15 років отримую задоволення від програмування. А також дуже полюбляю вивчати щось нове та ділитися тим, що знаю. Це одна з причин, чому я працюю як в індустрії, так і в освіті.</p>
+	<p>Захоплення, які я не перетворив в роботу це улюблена cім'я, як нажаль, приділяю часу менше, ніж булоб варто. А ще я обожнюю природу та походи про які останні роки доводиться в основному лише мріяти :-)
+	</p>
+	<h2>Трохи фото, відео та аудіо</h2>
+	<video  class="vid" style="float:left;" width="400" src="video/1.mp4" controls></video>
+	<div id="galery_photo">
+	<img id="current_photo" src="images/photo1.jpg"/>
+</div>
+<button class="cnop" onclick="show_next_photo()">Наступне фото</button>
+<button onclick="show_last_photo()">Попереднє фото</button>
+</article>
+	<aside>
+	<h2 id="os" class="da">Особисті дані</h2>
+	<ul>
+		<li><span class="rik"> Рік народження:</span> 2005</li>
+		<li><span class="stat">Стать:</span><a class="link" href="#1"> чоловіча</a></li>
+		<li><span class="mist">Місто:</span> Благодатне</li>
+		<li><span class="adr">Адреса:</span> вул.Миру, буд.18, кв.2
+		</li>
+	</ul>
+	<h2 class="da">Освіта</h2>
+	<ol>
+		<li><a  class="link" target="_blank" href="https://novscool8.e-schools.info/">Середня школа №8</a></li>
+		<li><a class="link" target="_blank" href="http://nemk.com.ua/">Двнз"НЕМК"</a></li>
+	</ol>
+	<h2 id="kon" class="da">Контактна інформіція</h2>
+	     <table class="table" width= "250" height="150" border="2">
+		<tr>
+			<th>Номер телефону</th>
+			<td>+38098721345</td>
+		</tr>
+		<tr>
+			<th>Інстаграм</th>
+			<td>Ukraine.2020</td>
+		</tr>
+		<tr>
+			<th>Twitter</th>
+			<td>Ukraine.2018</td>
+		</tr>
+</table>
+<p>Прохання писати виключно з питань роботи</p>
+	</aside>
+	<br>
+</main>
+<footer>
+        <h2 id="zv">Форма зворотнього зв'язку<h2>
+        <p>Зв'яжіться зі мною</p>
+        <input type="text" name="text">
+        <p>©2022 Всі права захищені.</p>
+      </section>
+</footer>
+	</body>
+</html>
